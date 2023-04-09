@@ -32,7 +32,8 @@ jobs:
         run: npm install -g serverless
 
       - name: Deploy to AWS Lambda
-        run: serverless deploy --stage dev --verbose
+        run: npm run deploy
+        #run: serverless deploy --stage dev --verbose
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
