@@ -9,7 +9,7 @@ provider:
   name: aws
   runtime: nodejs18.x
   region: eu-west-3 # (Paris)
-  profile: serverless # Profile name configured in AWS credentials file
+  #profile: serverless # Profile name configured in AWS credentials file
 
 functions:
   api:
